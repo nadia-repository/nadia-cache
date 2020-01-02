@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+apply from: "./libraries.gradle"
+
+
+group 'com.nadia.cache'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile(libraries.spring_boot)
+    compile(libraries.spring_boot_data_redis)
+    compile(libraries.spring_boot_starter_cache)
+    compile(libraries.lombok)
+    compile(libraries.caffeine)
+    compile(libraries.kryo)
+    compile(libraries.alibaba_fastjson)
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

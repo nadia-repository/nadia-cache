@@ -1,0 +1,28 @@
+/*
+ * Use a libraries map to define the dependency artifacts
+ * It similar to the maven <dependencyManagement>
+ */
+ext {
+
+	log4j_version							= '1.2.17'
+	logback_version							= '1.2.3'
+	lombok_version							= '1.16.20'
+	spring_boot_version           			= '1.5.11.RELEASE'
+	spring_redis_version           			= '1.5.11.RELEASE'
+	fastjson_version						= '1.2.61'
+	caffeine_version   						= '2.7.0'
+	kryo_version   							= '3.0.3'
+
+	libraries = [
+			log4j								: "log4j:log4j:${log4j_version}",
+			logback								: "ch.qos.logback:logback-classic:${logback_version}",
+			lombok								: "org.projectlombok:lombok:${lombok_version}",
+			spring_boot 						: "org.springframework.boot:spring-boot:${spring_boot_version}",
+			spring_boot_data_redis				: "org.springframework.boot:spring-boot-starter-data-redis:${spring_redis_version}",
+			spring_boot_starter_cache			: "org.springframework.boot:spring-boot-starter-cache:${spring_boot_version}",
+			alibaba_fastjson					: "com.alibaba:fastjson:${fastjson_version}",
+			caffeine                  			: "com.github.ben-manes.caffeine:caffeine:${caffeine_version}",
+			kryo                  				: "com.esotericsoftware:kryo-shaded:${kryo_version}",
+
+	]
+}
