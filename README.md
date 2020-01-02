@@ -1,14 +1,14 @@
-#目的
+# 目的
 * 给数据库减压
 * 针对不同活跃度数据，灵活使用一级、二级缓存
 
-#原理
+# 原理
 * spring cache 流程
 ![image](./pic/spring%20cache.png)
 * 多级缓存流程
 ![image](./pic/多级缓存.png)
 
-#使用
+# 使用
 #### 启用spring cache
 * 引入组件（以gradle为例）
 ```groovy
